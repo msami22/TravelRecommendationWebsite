@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover your next travel destination with personalized recommendations for beaches, temples, and cities worldwide.">
+    <title>Travel Recommendation - Discover Your Perfect Destination</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>✈️ TravelDiscover</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="nav-search">
+                <input type="text" id="searchInput" placeholder="Search destinations..." class="search-input">
+                <button id="searchBtn" class="btn btn-primary">Search</button>
+                <button id="clearBtn" class="btn btn-secondary">Clear</button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Dream Destination</h1>
+            <p class="hero-subtitle">Personalized travel recommendations based on your preferences</p>
+            <p class="hero-description">
+                Welcome to TravelDiscover, your ultimate guide to finding the perfect travel destination. 
+                Whether you're seeking pristine beaches, ancient temples, or vibrant cities, we provide 
+                personalized recommendations with detailed information and stunning imagery to help you 
+                plan your next unforgettable adventure.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-large" onclick="document.getElementById('recommendations').scrollIntoView({behavior: 'smooth'})">
+                    Explore Destinations
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Filter Buttons -->
+    <section class="filters">
+        <div class="container">
+            <h2>What are you looking for?</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn" data-filter="beaches">🏖️ Beaches</button>
+                <button class="filter-btn" data-filter="temples">🏛️ Temples</button>
+                <button class="filter-btn" data-filter="countries">🌍 Countries</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results / Recommendations Section -->
+    <section id="recommendations" class="recommendations">
+        <div class="container">
+            <h2 id="resultsTitle">Featured Destinations</h2>
+            <div id="resultsContainer" class="results-grid">
+                <!-- Results will be dynamically loaded here -->
+            </div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>No destinations found. Try searching for beaches, temples, or country names!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose TravelDiscover?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Personalized Recommendations</h3>
+                    <p>Get tailored suggestions based on your travel preferences and interests.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3>Rich Multimedia Content</h3>
+                    <p>Explore destinations through high-quality images and detailed descriptions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Comprehensive Information</h3>
+                    <p>Access detailed insights about each destination to make informed decisions.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Easy Navigation</h3>
+                    <p>User-friendly interface for seamless browsing and quick discoveries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TravelDiscover</h3>
+                    <p>Your trusted companion for discovering amazing travel destinations worldwide.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#" class="footer-filter" data-filter="beaches">Beaches</a></li>
+                        <li><a href="#" class="footer-filter" data-filter="temples">Temples</a></li>
+                        <li><a href="#" class="footer-filter" data-filter="countries">Countries</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TravelDiscover. All rights reserved. | Coursera JavaScript Essential Final Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
