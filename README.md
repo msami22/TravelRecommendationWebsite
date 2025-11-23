@@ -258,8 +258,8 @@ Before submitting your project:
 ### URLs to Submit:
 
 1. **Project Title**: Travel Recommendation Website
-2. **GitHub Repository URL**: `https://github.com/YOUR-USERNAME/travel-recommendation-website`
-3. **GitHub Pages URL**: `https://YOUR-USERNAME.github.io/travel-recommendation-website/`
+2. **GitHub Repository URL**: `https://github.com/msami22/TravelRecommendationWebsite`
+3. **GitHub Pages URL**: `https://msami22.github.io/TravelRecommendationWebsite/`
 
 **⚠️ Remember to include `https://` prefix!**
 
